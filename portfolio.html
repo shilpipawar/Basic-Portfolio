@@ -2,54 +2,86 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<head>
+
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!--Adding BootstrapCDN to my portfolio page-->
+  <!-- <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sickStyles.css"> -->
+
   <head>
 
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>About Me</title>
 
-    <!--Adding BootstrapCDN to my portfolio page-->
-    <!-- <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="sickStyles.css"> -->
+    <!--Adding CSS Style to my portfolio page-->
+    <link rel="stylesheet" href="assets/css/Reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolioStyle.CSS">
 
-      <head>
+  </head>
 
-          <meta charset="UTF-8">
-          <title>About Me</title>
-      
-          <!--Adding CSS Style to my portfolio page-->
-         <link rel="stylesheet" href="assets/css/Reset.css">
-          <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-          
-        </head>
-      
-        <body>
-               <div id="PortfolioName">        
-                      
-               </div>
-               <div class = "wrapper">
-                  <h1>Shilpa Pawar</h1>
-                  <ul id="MenuStyle">
-                          <li>
-                                  <a href="contact.html">Contact</a>
-                          </li>
-                          <li>
-                                  <a href="portfolio.html">Portfolio</a>
-                          </li>
-                          <li>
-                                  <a href="index.html">About</a>
-                          </li>
-                          
-                        </ul>
-      
-          <section class = "contents">
+<body>
 
-              <h2>Portfolio</h2>
-              <hr>
-              
-          </section>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Shilpa Pawar</h1>
+      <ul id="MenuStyle">
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="index.html">About</a>
+        </li>
 
-          <div class="footer">
-              Copyright &#169;
+      </ul>
+    </div>
+    <section class="contents">
+
+      <h2>Portfolio</h2>
+      <hr>
+
+      <div class="row">
+        <div class="column">
+          <img src="assets/images/IMG_8765.JPG" alt="Nature" style="width:40%;height:40%;">
+        </div>
+        </div>  
+        <div class="column">
+          <img src="assets/images/IMG_8063.JPG" alt="Snow" style="width:40%;height:40%;">
+        </div>
+        <div class="row">
+        <div class="column">
+          <img src="assets/images/IMG_8269.JPG" alt="Mountains" style="width:40%;height:40%;">
+        </div>
+        </div>
+        <div class="row">
+        <div class="column">
+          <img src="assets/images/IMG_8765.JPG" alt="Lights1" style="width:40%;height:40%;">
+        </div>
       </div>
-  </body>
-  </html>
+
+      <!-- The expanding image container -->
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+
+    </section>
+
+    <div class="footer">
+      Copyright &#169;
+    </div>
+</body>
+
+</html>
